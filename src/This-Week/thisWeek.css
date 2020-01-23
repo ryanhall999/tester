@@ -1,0 +1,9 @@
+.day-container {
+  display: flex;
+}
+#days {
+  border: 1px solid black;
+}
+button {
+  width: 50%;
+}
