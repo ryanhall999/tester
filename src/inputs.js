@@ -1,17 +1,38 @@
-import React from "react";
+import React from 'react';
 
-export default function Inputs() {
-	return (
-		<div>
-			<div class="slidecontainer">
-				<input type="range" min="1" max="255" value="50" class="slider"></input>
-			</div>
-			<div class="slidecontainer">
-				<input type="range" min="1" max="255" value="50" class="slider"></input>
-			</div>
-			<div class="slidecontainer">
-				<input type="range" min="1" max="255" value="50" class="slider"></input>
-			</div>
-		</div>
-	);
+export default function Inputs(props) {
+  return (
+    <div>
+      <div className="red">
+        <input
+          type="range"
+          min="1"
+          max="255"
+          value="50"
+          className="slider"
+          onChange={props.handleChange}
+        ></input>
+      </div>
+      <div className="green">
+        <input
+          type="range"
+          min="1"
+          max="255"
+          value="50"
+          className="slider"
+          onChange={props.handleChange}
+        ></input>
+      </div>
+      <div className="blue">
+        <input
+          type="range"
+          min="1"
+          max="255"
+          value="50"
+          className="slider"
+          onChange={props.handleChange}
+        ></input>
+      </div>
+    </div>
+  );
 }
