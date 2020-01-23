@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -25,7 +27,7 @@
 }
 
 .App-link {
-  color: red;
+  color: rgb(151, 34, 34);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +37,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
 }
